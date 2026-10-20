@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4454_17",
+  "name": "IZAR 4454 Ø17 2Φ HSSE Autolock · l19 · art.44900",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "19.000 mm",
+    "Diameter": "17.000 mm",
+    "Flutes": 2,
+    "Length": "79.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "16.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

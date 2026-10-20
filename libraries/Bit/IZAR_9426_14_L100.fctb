@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9426_14_L100",
+  "name": "IZAR 9426 Ø14 2Φ ΣΚ σφαιρική μακριά · l30 · art.13407",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "30.000 mm",
+    "Diameter": "14.000 mm",
+    "Flutes": 2,
+    "Length": "100.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "14.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "ballend.fcstd",
+  "shape-type": "Ballend",
+  "version": 2
+}

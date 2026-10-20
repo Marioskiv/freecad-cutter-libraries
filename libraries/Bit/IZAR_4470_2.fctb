@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4470_2",
+  "name": "IZAR 4470 Ø2 2Φ HSSE σφαιρική μακριά · l7 · art.45281 / 18115",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "7.000 mm",
+    "Diameter": "2.000 mm",
+    "Flutes": 2,
+    "Length": "54.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "6.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "ballend.fcstd",
+  "shape-type": "Ballend",
+  "version": 2
+}

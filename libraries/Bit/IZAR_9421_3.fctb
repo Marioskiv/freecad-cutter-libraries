@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9421_3",
+  "name": "IZAR 9421 Ø3 2Φ ΣΚ γενικής χρήσης · l8 · art.28410 / 28562",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "8.000 mm",
+    "Diameter": "3.000 mm",
+    "Flutes": 2,
+    "Length": "38.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "3.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

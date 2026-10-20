@@ -30,6 +30,15 @@
   kept as he gave them: 9417 Ø5 l42 has L80 (2026: L75); 9417 Ø12 has l55 (2026: l52, added as
   IZAR_9417_12_l52). The 2018 Carbide Programme PDF he sent has no 4454/4464 (HSSE) and no aluminium 1Z/2Z
   series that the 2026 catalogue lacks.
+- 2026-10-20 (1.3.0) Marios: "yes, keep them all" (Amana stays) and "add those too, and the IZAR 235 ones".
+  tools/izar_extra.py makes two more libraries, every row checked against a picture of its page (the PDF text
+  had lost rows again: 4422 Ø10-13, 4470 Ø10-12): IZAR_235 (75: the 4454/4464 rows his library lacked + ball
+  4422/4470, IZAR_235.pdf p.241-243; its 4420/4426/4410/4411 are already covered) and IZAR_Carbide_2018 (109:
+  9421, 9424, 9425, 9426 ball, 9470, 9475 micro ball; Carbide Programme p.27/29/37/38). Micro mills: the
+  cutting length l is CuttingEdgeHeight; the neck reach (l1) is only in the name ("βάθος"). FreeCAD's bit shapes
+  have no neck. 9452 (corner rounding) not added.
+- His catalogues are kept in the session uploads (YG-1 YE-AP25 EUROPE.pdf, IZAR_235.pdf, Carbide_programme.pdf,
+  ALUMINIO_2026.pdf, the Fusion .tools files); sent back to him 2026-10-20 after he lost his copies.
 - Repo PUBLIC (needed for the Addon Manager; his yes 2026-10-20). Claude's GitHub app cannot create repos
   (403): Marios created it by hand.
 
@@ -42,5 +51,5 @@
 ## Verified
 - 2026-10-20 real FreeCAD 26.3, clean user folder (tests/run.sh): button on a CAM toolbar; first press copies
   148 files (1.0.0; 275 with the 2026 IZAR set); FreeCAD's CAM lists the 3 libraries and loads 26/85/34 bits
-  (26/212/34 in 1.1.0; 26/85/151/34 and 300 files in 1.2.0), every one with a diameter; second press
+  (26/212/34 in 1.1.0; 26/85/151/34 and 300 files in 1.2.0; 26/85/151/75/109/34 and 486 files in 1.3.0), every one with a diameter; second press
   copies nothing; an edited bit is kept on "No" and replaced on "Yes".

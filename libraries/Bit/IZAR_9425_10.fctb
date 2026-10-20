@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9425_10",
+  "name": "IZAR 9425 Ø10 2Φ ΣΚ σφαιρική · l22 · art.28700",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "22.000 mm",
+    "Diameter": "10.000 mm",
+    "Flutes": 2,
+    "Length": "72.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "10.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "ballend.fcstd",
+  "shape-type": "Ballend",
+  "version": 2
+}
