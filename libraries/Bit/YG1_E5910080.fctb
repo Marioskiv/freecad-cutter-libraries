@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "YG1_E5910080",
+  "name": "YG-1 E5910080 \u00b7 \u00d88 2\u03a6 \u03c3\u03c6\u03b1\u03b9\u03c1\u03b9\u03ba\u03ae",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "7.000 mm",
+    "Diameter": "8.000 mm",
+    "Flutes": 2,
+    "Length": "65.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "8.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "ballend.fcstd",
+  "shape-type": "Ballend",
+  "version": 2
+}

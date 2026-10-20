@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "Amana_51470-Z",
+  "name": "Amana 51470-Z \u00d81,59 (1/16\") 2\u03a6 Up-Cut",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "6.350 mm",
+    "Diameter": "1.587 mm",
+    "Flutes": 2,
+    "Length": "38.100 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "3.175 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

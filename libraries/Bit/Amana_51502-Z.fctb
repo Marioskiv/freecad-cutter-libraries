@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "Amana_51502-Z",
+  "name": "Amana 51502-Z \u00d86,35 (1/4\") 1\u03a6 Down-Cut",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "15.875 mm",
+    "Diameter": "6.350 mm",
+    "Flutes": 1,
+    "Length": "50.800 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "6.350 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "YG1_E5522100",
+  "name": "YG-1 E5522100 \u00b7 \u00d810 2\u03a6 \u03bc\u03b1\u03ba\u03c1\u03b9\u03ac",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "22.000 mm",
+    "Diameter": "10.000 mm",
+    "Flutes": 2,
+    "Length": "72.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "10.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

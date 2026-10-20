@@ -1,0 +1,110 @@
+{
+  "label": "YG-1 Alu-Power (1 \u03ba\u03b1\u03b9 2 \u03b4\u03cc\u03bd\u03c4\u03b9\u03b1)",
+  "tools": [
+    {
+      "nr": 1,
+      "path": "YG1_E5E47020.fctb"
+    },
+    {
+      "nr": 2,
+      "path": "YG1_E5E47030.fctb"
+    },
+    {
+      "nr": 3,
+      "path": "YG1_E5E47040.fctb"
+    },
+    {
+      "nr": 4,
+      "path": "YG1_E5E47050.fctb"
+    },
+    {
+      "nr": 5,
+      "path": "YG1_E5E47060.fctb"
+    },
+    {
+      "nr": 6,
+      "path": "YG1_E5E47080.fctb"
+    },
+    {
+      "nr": 7,
+      "path": "YG1_E5E47100.fctb"
+    },
+    {
+      "nr": 8,
+      "path": "YG1_E5E47120.fctb"
+    },
+    {
+      "nr": 9,
+      "path": "YG1_E5E48030.fctb"
+    },
+    {
+      "nr": 10,
+      "path": "YG1_E5E48040.fctb"
+    },
+    {
+      "nr": 11,
+      "path": "YG1_E5E48050.fctb"
+    },
+    {
+      "nr": 12,
+      "path": "YG1_E5E48060.fctb"
+    },
+    {
+      "nr": 13,
+      "path": "YG1_E5E48080.fctb"
+    },
+    {
+      "nr": 14,
+      "path": "YG1_E5E48100.fctb"
+    },
+    {
+      "nr": 15,
+      "path": "YG1_E5E48120.fctb"
+    },
+    {
+      "nr": 16,
+      "path": "YG1_E5522030.fctb"
+    },
+    {
+      "nr": 17,
+      "path": "YG1_E5522040.fctb"
+    },
+    {
+      "nr": 18,
+      "path": "YG1_E5522050.fctb"
+    },
+    {
+      "nr": 19,
+      "path": "YG1_E5522060.fctb"
+    },
+    {
+      "nr": 20,
+      "path": "YG1_E5522080.fctb"
+    },
+    {
+      "nr": 21,
+      "path": "YG1_E5522100.fctb"
+    },
+    {
+      "nr": 22,
+      "path": "YG1_E5522120.fctb"
+    },
+    {
+      "nr": 23,
+      "path": "YG1_E5910060.fctb"
+    },
+    {
+      "nr": 24,
+      "path": "YG1_E5910080.fctb"
+    },
+    {
+      "nr": 25,
+      "path": "YG1_E5910100.fctb"
+    },
+    {
+      "nr": 26,
+      "path": "YG1_E5910120.fctb"
+    }
+  ],
+  "version": 1
+}

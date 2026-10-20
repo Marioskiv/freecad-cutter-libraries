@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "Amana_HSS1655",
+  "name": "Amana HSS1655 \u00d86,35 (1/4\") 2\u03a6 HSS Down-Cut",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "25.400 mm",
+    "Diameter": "6.350 mm",
+    "Flutes": 2,
+    "Length": "76.200 mm",
+    "Material": "HSS",
+    "ShankDiameter": "6.350 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

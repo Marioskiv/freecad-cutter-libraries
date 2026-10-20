@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "Amana_HSS1633",
+  "name": "Amana HSS1633 \u00d86,35 (1/4\") 2\u03a6 HSS Up-Cut",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "15.875 mm",
+    "Diameter": "6.350 mm",
+    "Flutes": 2,
+    "Length": "69.850 mm",
+    "Material": "HSS",
+    "ShankDiameter": "6.350 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

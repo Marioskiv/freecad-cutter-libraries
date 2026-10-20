@@ -1,0 +1,142 @@
+{
+  "label": "Amana \u03b3\u03b9\u03b1 \u03b1\u03bb\u03bf\u03c5\u03bc\u03af\u03bd\u03b9\u03bf (\u03b1\u03c0\u03cc Fusion)",
+  "tools": [
+    {
+      "nr": 1,
+      "path": "Amana_51470.fctb"
+    },
+    {
+      "nr": 2,
+      "path": "Amana_51470-Z.fctb"
+    },
+    {
+      "nr": 3,
+      "path": "Amana_51372-Z.fctb"
+    },
+    {
+      "nr": 4,
+      "path": "Amana_51474.fctb"
+    },
+    {
+      "nr": 5,
+      "path": "Amana_51474-Z.fctb"
+    },
+    {
+      "nr": 6,
+      "path": "Amana_51373.fctb"
+    },
+    {
+      "nr": 7,
+      "path": "Amana_51777-Z.fctb"
+    },
+    {
+      "nr": 8,
+      "path": "Amana_HSS1620.fctb"
+    },
+    {
+      "nr": 9,
+      "path": "Amana_43530.fctb"
+    },
+    {
+      "nr": 10,
+      "path": "Amana_51454.fctb"
+    },
+    {
+      "nr": 11,
+      "path": "Amana_51454-Z.fctb"
+    },
+    {
+      "nr": 12,
+      "path": "Amana_51486.fctb"
+    },
+    {
+      "nr": 13,
+      "path": "Amana_51486-Z.fctb"
+    },
+    {
+      "nr": 14,
+      "path": "Amana_51406.fctb"
+    },
+    {
+      "nr": 15,
+      "path": "Amana_51406-Z.fctb"
+    },
+    {
+      "nr": 16,
+      "path": "Amana_HSS1630.fctb"
+    },
+    {
+      "nr": 17,
+      "path": "Amana_51852-Z.fctb"
+    },
+    {
+      "nr": 18,
+      "path": "Amana_51475.fctb"
+    },
+    {
+      "nr": 19,
+      "path": "Amana_51408.fctb"
+    },
+    {
+      "nr": 20,
+      "path": "Amana_51408-Z.fctb"
+    },
+    {
+      "nr": 21,
+      "path": "Amana_51402.fctb"
+    },
+    {
+      "nr": 22,
+      "path": "Amana_51402-Z.fctb"
+    },
+    {
+      "nr": 23,
+      "path": "Amana_51502.fctb"
+    },
+    {
+      "nr": 24,
+      "path": "Amana_51502-Z.fctb"
+    },
+    {
+      "nr": 25,
+      "path": "Amana_HSS1622.fctb"
+    },
+    {
+      "nr": 26,
+      "path": "Amana_51377.fctb"
+    },
+    {
+      "nr": 27,
+      "path": "Amana_51377-Z.fctb"
+    },
+    {
+      "nr": 28,
+      "path": "Amana_51480.fctb"
+    },
+    {
+      "nr": 29,
+      "path": "Amana_51480-Z.fctb"
+    },
+    {
+      "nr": 30,
+      "path": "Amana_51481.fctb"
+    },
+    {
+      "nr": 31,
+      "path": "Amana_51481-Z.fctb"
+    },
+    {
+      "nr": 32,
+      "path": "Amana_HSS1633.fctb"
+    },
+    {
+      "nr": 33,
+      "path": "Amana_HSS1655.fctb"
+    },
+    {
+      "nr": 34,
+      "path": "Amana_51489.fctb"
+    }
+  ],
+  "version": 1
+}

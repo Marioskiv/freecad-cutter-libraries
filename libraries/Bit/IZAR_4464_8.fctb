@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4464_8",
+  "name": "IZAR 4464 \u00d88 2\u03a6 HSSE Autolock \u03bc\u03b1\u03ba\u03c1\u03b9\u03ac \u00b7 art.45113",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "19.000 mm",
+    "Diameter": "8.000 mm",
+    "Flutes": 2,
+    "Length": "88.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "10.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

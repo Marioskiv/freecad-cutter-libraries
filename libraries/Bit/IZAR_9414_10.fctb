@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9414_10",
+  "name": "IZAR 9414 \u00d810 1\u03a6 \u03c6\u03b9\u03bd\u03af\u03c1\u03b9\u03c3\u03bc\u03b1 \u03bc\u03b1\u03ba\u03c1\u03b9\u03ac \u00b7 art.42868",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "40.000 mm",
+    "Diameter": "10.000 mm",
+    "Flutes": 1,
+    "Length": "120.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "10.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

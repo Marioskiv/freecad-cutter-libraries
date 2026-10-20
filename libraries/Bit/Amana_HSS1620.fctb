@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "Amana_HSS1620",
+  "name": "Amana HSS1620 \u00d83,17 (1/8\") 1\u03a6 HSS Up-Cut",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "9.525 mm",
+    "Diameter": "3.175 mm",
+    "Flutes": 1,
+    "Length": "66.675 mm",
+    "Material": "HSS",
+    "ShankDiameter": "6.350 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "Amana_51489",
+  "name": "Amana 51489 \u00d812,7 (1/2\") 1\u03a6 Up-Cut",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "41.275 mm",
+    "Diameter": "12.700 mm",
+    "Flutes": 1,
+    "Length": "88.900 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "12.700 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

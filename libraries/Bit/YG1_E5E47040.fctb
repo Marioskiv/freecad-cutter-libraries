@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "YG1_E5E47040",
+  "name": "YG-1 E5E47040 \u00b7 \u00d84 1\u03a6",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "15.000 mm",
+    "Diameter": "4.000 mm",
+    "Flutes": 1,
+    "Length": "60.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "4.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

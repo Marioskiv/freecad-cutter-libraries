@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "Amana_51406-Z",
+  "name": "Amana 51406-Z \u00d83,17 (1/8\") 2\u03a6 Up-Cut",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "7.938 mm",
+    "Diameter": "3.175 mm",
+    "Flutes": 2,
+    "Length": "63.500 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "3.175 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}
