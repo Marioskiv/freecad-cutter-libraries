@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9456_5",
+  "name": "IZAR 9456 Ø5 1Φ ΣΚ αριστερή έλικα · l22 · art.78383 / 60812",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "22.000 mm",
+    "Diameter": "5.000 mm",
+    "Flutes": 1,
+    "Length": "50.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "5.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

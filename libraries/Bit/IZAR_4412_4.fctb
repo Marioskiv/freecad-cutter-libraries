@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4412_4",
+  "name": "IZAR 4412 Ø4 1Φ HSS · l12 · art.44090",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "12.000 mm",
+    "Diameter": "4.000 mm",
+    "Flutes": 1,
+    "Length": "60.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "8.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9419_10",
+  "name": "IZAR 9419 Ø10 1Φ ΣΚ ALTIN · l30 · art.58862 / 59201",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "30.000 mm",
+    "Diameter": "10.000 mm",
+    "Flutes": 1,
+    "Length": "72.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "10.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

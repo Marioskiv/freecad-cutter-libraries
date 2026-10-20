@@ -12,6 +12,17 @@
   Bit folder (160 .fctb). In the repo: only YG1_*, IZAR_*, Amana_* (145) + the 3 libraries. Left out: FreeCAD's
   own sample bits/Default library (FreeCAD ships them) and one bit he made himself ("5mm 2 fluit izar", id
   34e100ea-…).
+- 2026-10-20 (1.1.0) Marios sent IZAR's 2026 aluminium catalogue (ALUMINIO_2026_ES_EN_FR_sin_precios.pdf,
+  96 pages) and said: use only this one, forget the IZAR files before, take the 1- and 2-flute aluminium end
+  mills. The old 85 IZAR bits were replaced by 212, every row checked against a picture of its page (the PDF
+  text lost 2 rows: 6420 Ø3 and the third drain-hole row of 9417). Series (catalogue page): carbide 2Z 9427 (51),
+  9429 (52); carbide 1Z 9441 (53), 9416 (54), 9417 (55), 9456 (56), 9466 (57), 9419 (58), 9413 (59), 9411 (60),
+  9414 (61); PMX 2Z 6420 (69); HSSE 2Z 4420 (72), 4426 (73); HSSE 1Z 4410, 4411 (74); HSS 1Z 4412, 4413 (75),
+  4414, 4415 (76), 4416, 4417 (77). Left out: 9417's drain-hole tools (90° point, not an end mill), 9674
+  (Alucobond V-groove), 9330 (thread mill). 4454/4464 from the old catalogue are not in the 2026 one, so they
+  are gone. One bit per row (coated and uncoated share the geometry; both article numbers are in the name).
+  9456/9466 are right-hand cut with a left helix (pictures on p.56/57), so SpindleDirection stays Forward.
+  The rows are in tools/izar_2026.py (python3 tools/izar_2026.py libraries rebuilds them).
 - Repo PUBLIC (needed for the Addon Manager; his yes 2026-10-20). Claude's GitHub app cannot create repos
   (403): Marios created it by hand.
 
@@ -23,5 +34,6 @@
 
 ## Verified
 - 2026-10-20 real FreeCAD 26.3, clean user folder (tests/run.sh): button on a CAM toolbar; first press copies
-  148 files; FreeCAD's CAM lists the 3 libraries and loads 26/85/34 bits, every one with a diameter; second press
+  148 files (1.0.0; 275 with the 2026 IZAR set); FreeCAD's CAM lists the 3 libraries and loads 26/85/34 bits
+  (26/212/34 in 1.1.0), every one with a diameter; second press
   copies nothing; an edited bit is kept on "No" and replaced on "Yes".

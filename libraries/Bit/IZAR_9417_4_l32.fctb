@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9417_4_l32",
+  "name": "IZAR 9417 Ø4 1Φ ΣΚ γυαλισμένη μακριά · l32 · art.22085 / 59985",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "32.000 mm",
+    "Diameter": "4.000 mm",
+    "Flutes": 1,
+    "Length": "70.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "4.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

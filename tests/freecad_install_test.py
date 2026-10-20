@@ -58,17 +58,17 @@ def go():
 
         target = cutterlibs.target_root()
         new, same, changed = cutterlibs.plan(target)
-        check(len(new) == 148 and not changed, "clean FreeCAD: 148 files to copy (145 cutters + 3 libraries), "
+        check(len(new) == 275 and not changed, "clean FreeCAD: 275 files to copy (272 cutters + 3 libraries), "
               "got %d new, %d changed" % (len(new), len(changed)))
         Gui.runCommand("CutterLibraries_Install")
         pump(300)
-        check(told and "148 αρχεία αντιγράφηκαν" in told[-1], "first press: 148 copied (%r)" % (told[-1:] or ""))
+        check(told and "275 αρχεία αντιγράφηκαν" in told[-1], "first press: 275 copied (%r)" % (told[-1:] or ""))
 
         from Path.Tool import cam_assets
         from Path.Tool.library.models.library import Library
         from Path.Tool.assets import AssetUri
         libs = {lib.get_id(): lib for lib in cam_assets.fetch(asset_type="toolbitlibrary", depth=0)}
-        want = {"YG1_AluPower": 26, "IZAR_Aluminio": 85, "Amana_Aluminio": 34}
+        want = {"YG1_AluPower": 26, "IZAR_Aluminio": 212, "Amana_Aluminio": 34}
         for lib_id, n in want.items():
             check(lib_id in libs, "FreeCAD's CAM lists the library %s (%s)" % (lib_id, sorted(libs)))
             if lib_id not in libs:
@@ -88,7 +88,7 @@ def go():
         told.clear()
         Gui.runCommand("CutterLibraries_Install")
         pump(300)
-        check(told and "0 αρχεία αντιγράφηκαν, 148 ήταν ήδη ίδια" in told[-1], "second press copies nothing")
+        check(told and "0 αρχεία αντιγράφηκαν, 275 ήταν ήδη ίδια" in told[-1], "second press copies nothing")
 
         bit = os.path.join(target, "Bit", "YG1_E5522030.fctb")
         d = json.load(open(bit, encoding="utf-8"))

@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_6420_3",
+  "name": "IZAR 6420 Ø3 2Φ PMX · l5 · art.88329 / 88328",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "5.000 mm",
+    "Diameter": "3.000 mm",
+    "Flutes": 2,
+    "Length": "49.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "6.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

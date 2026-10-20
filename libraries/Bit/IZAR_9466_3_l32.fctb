@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9466_3_l32",
+  "name": "IZAR 9466 Ø3 1Φ ΣΚ αριστερή έλικα μακριά · l32 · art.89253 / 89267",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "32.000 mm",
+    "Diameter": "3.000 mm",
+    "Flutes": 1,
+    "Length": "70.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "3.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

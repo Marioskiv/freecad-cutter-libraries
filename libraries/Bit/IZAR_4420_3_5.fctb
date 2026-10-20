@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4420_3_5",
+  "name": "IZAR 4420 Ø3.5 2Φ HSSE · l6 · art.44258 / 41617",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "6.000 mm",
+    "Diameter": "3.500 mm",
+    "Flutes": 2,
+    "Length": "50.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "6.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9411_8",
+  "name": "IZAR 9411 Ø8 1Φ ΣΚ θερμοπλαστικά · l15 · art.13105 / 13138",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "15.000 mm",
+    "Diameter": "8.000 mm",
+    "Flutes": 1,
+    "Length": "63.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "8.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

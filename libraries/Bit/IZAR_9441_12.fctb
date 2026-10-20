@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9441_12",
+  "name": "IZAR 9441 Ø12 1Φ ΣΚ γυαλισμένη · l35 · art.10365 / 83926",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "35.000 mm",
+    "Diameter": "12.000 mm",
+    "Flutes": 1,
+    "Length": "83.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "12.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

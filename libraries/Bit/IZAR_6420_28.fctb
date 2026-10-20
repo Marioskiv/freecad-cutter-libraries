@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_6420_28",
+  "name": "IZAR 6420 Ø28 2Φ PMX · l26 · art.11120 / 13156",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "26.000 mm",
+    "Diameter": "28.000 mm",
+    "Flutes": 2,
+    "Length": "102.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "25.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

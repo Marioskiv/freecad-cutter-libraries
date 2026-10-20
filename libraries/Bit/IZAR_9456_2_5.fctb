@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9456_2_5",
+  "name": "IZAR 9456 Ø2.5 1Φ ΣΚ αριστερή έλικα · l6 · art.78377 / 60641",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "6.000 mm",
+    "Diameter": "2.500 mm",
+    "Flutes": 1,
+    "Length": "38.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "3.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4426_16_l63",
+  "name": "IZAR 4426 Ø16 2Φ HSSE μακριά · l63 · art.13506 / 13515",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "63.000 mm",
+    "Diameter": "16.000 mm",
+    "Flutes": 2,
+    "Length": "123.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "16.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}
