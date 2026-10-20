@@ -1,15 +1,15 @@
 {
   "attribute": {},
-  "id": "IZAR_9417_5_l42",
-  "name": "IZAR 9417 Ø5 1Φ ΣΚ γυαλισμένη μακριά · l42 · art.78455 / 59988",
+  "id": "IZAR_9417_4",
+  "name": "IZAR 9417 \u00d84 1\u03a6 \u03b3\u03c5\u03b1\u03bb\u03b9\u03c3\u03bc\u03ad\u03bd\u03b7 \u03bc\u03b1\u03ba\u03c1\u03b9\u03ac \u00b7 art.78454",
   "parameter": {
     "Chipload": "0.000 mm",
     "CuttingEdgeHeight": "42.000 mm",
-    "Diameter": "5.000 mm",
+    "Diameter": "4.000 mm",
     "Flutes": 1,
-    "Length": "75.000 mm",
+    "Length": "70.000 mm",
     "Material": "Carbide",
-    "ShankDiameter": "5.000 mm",
+    "ShankDiameter": "4.000 mm",
     "SpindleDirection": "Forward",
     "Units": "Metric"
   },
