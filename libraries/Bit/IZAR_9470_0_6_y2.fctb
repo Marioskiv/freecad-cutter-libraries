@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9470_0_6_y2",
+  "name": "IZAR 9470 Ø0.6 2Φ ΣΚ μίνι · l0.7 · βάθος 2 · art.78407",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "0.700 mm",
+    "Diameter": "0.600 mm",
+    "Flutes": 2,
+    "Length": "50.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "4.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

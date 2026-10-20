@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4464_18",
+  "name": "IZAR 4464 Ø18 2Φ HSSE Autolock μακριά · l32 · art.45140",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "32.000 mm",
+    "Diameter": "18.000 mm",
+    "Flutes": 2,
+    "Length": "123.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "16.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

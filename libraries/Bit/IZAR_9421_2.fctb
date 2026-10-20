@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9421_2",
+  "name": "IZAR 9421 Ø2 2Φ ΣΚ γενικής χρήσης · l6 · art.33620 / 36200",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "6.000 mm",
+    "Diameter": "2.000 mm",
+    "Flutes": 2,
+    "Length": "38.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "3.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

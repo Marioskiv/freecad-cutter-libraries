@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9426_20_L150",
+  "name": "IZAR 9426 Ø20 2Φ ΣΚ σφαιρική μακριά · l40 · art.30434",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "40.000 mm",
+    "Diameter": "20.000 mm",
+    "Flutes": 2,
+    "Length": "150.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "20.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "ballend.fcstd",
+  "shape-type": "Ballend",
+  "version": 2
+}

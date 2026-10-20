@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9424_10",
+  "name": "IZAR 9424 Ø10 2Φ ΣΚ γενικής χρήσης μακριά · l40 · art.28721",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "40.000 mm",
+    "Diameter": "10.000 mm",
+    "Flutes": 2,
+    "Length": "100.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "10.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

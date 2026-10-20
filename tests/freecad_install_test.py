@@ -1,7 +1,7 @@
 # Cutter Libraries — test in a real FreeCAD (run by tests/run.sh, in a clean user folder).
 #
 # The button is on a CAM toolbar; pressed, it copies the libraries; FreeCAD's own CAM asset manager then
-# lists the four libraries and loads every cutter with its diameter; pressing again copies nothing; a
+# lists the six libraries and loads every cutter with its diameter; pressing again copies nothing; a
 # cutter you changed is kept when you answer "No" and replaced when you answer "Yes".
 #
 # Copyright (c) 2026 Marioskiv
@@ -58,17 +58,17 @@ def go():
 
         target = cutterlibs.target_root()
         new, same, changed = cutterlibs.plan(target)
-        check(len(new) == 300 and not changed, "clean FreeCAD: 300 files to copy (296 cutters + 4 libraries), "
+        check(len(new) == 486 and not changed, "clean FreeCAD: 486 files to copy (480 cutters + 6 libraries), "
               "got %d new, %d changed" % (len(new), len(changed)))
         Gui.runCommand("CutterLibraries_Install")
-        pump(300)
-        check(told and "300 αρχεία αντιγράφηκαν" in told[-1], "first press: 300 copied (%r)" % (told[-1:] or ""))
+        pump(486)
+        check(told and "486 αρχεία αντιγράφηκαν" in told[-1], "first press: 486 copied (%r)" % (told[-1:] or ""))
 
         from Path.Tool import cam_assets
         from Path.Tool.library.models.library import Library
         from Path.Tool.assets import AssetUri
         libs = {lib.get_id(): lib for lib in cam_assets.fetch(asset_type="toolbitlibrary", depth=0)}
-        want = {"YG1_AluPower": 26, "IZAR_Aluminio": 85, "IZAR_Aluminio_2026": 151, "Amana_Aluminio": 34}
+        want = {"YG1_AluPower": 26, "IZAR_Aluminio": 85, "IZAR_Aluminio_2026": 151, "IZAR_235": 75, "IZAR_Carbide_2018": 109, "Amana_Aluminio": 34}
         for lib_id, n in want.items():
             check(lib_id in libs, "FreeCAD's CAM lists the library %s (%s)" % (lib_id, sorted(libs)))
             if lib_id not in libs:
@@ -87,8 +87,8 @@ def go():
 
         told.clear()
         Gui.runCommand("CutterLibraries_Install")
-        pump(300)
-        check(told and "0 αρχεία αντιγράφηκαν, 300 ήταν ήδη ίδια" in told[-1], "second press copies nothing")
+        pump(486)
+        check(told and "0 αρχεία αντιγράφηκαν, 486 ήταν ήδη ίδια" in told[-1], "second press copies nothing")
 
         bit = os.path.join(target, "Bit", "YG1_E5522030.fctb")
         d = json.load(open(bit, encoding="utf-8"))
@@ -96,11 +96,11 @@ def go():
         json.dump(d, open(bit, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
         answers.append(False)
         Gui.runCommand("CutterLibraries_Install")
-        pump(300)
+        pump(486)
         check("0.030" in open(bit, encoding="utf-8").read(), "a changed cutter is kept when the answer is No")
         answers.append(True)
         Gui.runCommand("CutterLibraries_Install")
-        pump(300)
+        pump(486)
         check("0.030" not in open(bit, encoding="utf-8").read(), "and replaced when the answer is Yes")
     except Exception:
         fails.append("exception")

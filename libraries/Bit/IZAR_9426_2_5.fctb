@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9426_2_5",
+  "name": "IZAR 9426 Ø2.5 2Φ ΣΚ σφαιρική μακριά · l10 · art.21770",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "10.000 mm",
+    "Diameter": "2.500 mm",
+    "Flutes": 2,
+    "Length": "75.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "3.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "ballend.fcstd",
+  "shape-type": "Ballend",
+  "version": 2
+}

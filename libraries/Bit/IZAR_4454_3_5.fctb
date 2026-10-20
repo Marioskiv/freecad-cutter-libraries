@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4454_3_5",
+  "name": "IZAR 4454 Ø3.5 2Φ HSSE Autolock · l6 · art.44849",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "6.000 mm",
+    "Diameter": "3.500 mm",
+    "Flutes": 2,
+    "Length": "50.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "6.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

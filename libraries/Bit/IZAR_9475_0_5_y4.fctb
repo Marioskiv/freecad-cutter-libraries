@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9475_0_5_y4",
+  "name": "IZAR 9475 Ø0.5 2Φ ΣΚ μίνι σφαιρική · l0.5 · βάθος 4 · art.78432",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "0.500 mm",
+    "Diameter": "0.500 mm",
+    "Flutes": 2,
+    "Length": "50.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "4.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "ballend.fcstd",
+  "shape-type": "Ballend",
+  "version": 2
+}
