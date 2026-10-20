@@ -1,5 +1,7 @@
-# IZAR "Aluminio 2026" catalogue → libraries/Bit/IZAR_*.fctb + libraries/Library/IZAR_Aluminio.fctl
+# IZAR "Aluminio 2026" catalogue → libraries/Library/IZAR_Aluminio_2026.fctl + its libraries/Bit/IZAR_*.fctb
 #   python3 tools/izar_2026.py libraries
+# Marios's own IZAR library (IZAR_Aluminio.fctl, 85 bits) stays exactly as he gave it; this adds only the 2026
+# rows it does not have (same series, diameter and cutting length = already there).
 #
 # Copyright (c) 2026 Marioskiv
 # https://github.com/Marioskiv/freecad-cutter-libraries
@@ -90,15 +92,27 @@ S = [
  ("4417", 77, "HSS", "HSS", 1, "μακρύς λαιμός", [(5,8,100,35,"44138",None)]),
 ]
 def num(x): return ("%g" % x).replace(".", "_")
+def mm(p, k): return float(p[k].split()[0])
 out = sys.argv[1]
 bitdir = os.path.join(out, "Bit"); libdir = os.path.join(out, "Library")
 os.makedirs(bitdir, exist_ok=True); os.makedirs(libdir, exist_ok=True)
+have, taken = set(), set()
+with open(os.path.join(libdir, "IZAR_Aluminio.fctl"), encoding="utf-8") as f:
+    for t in json.load(f)["tools"]:
+        with open(os.path.join(bitdir, t["path"]), encoding="utf-8") as b:
+            p = json.load(b)["parameter"]
+        have.add((t["path"].split("_")[1], mm(p, "Diameter"), mm(p, "CuttingEdgeHeight")))
+        taken.add(t["path"][:-5])
 tools = []
 for ser, page, tag, mat, z, desc, rows in S:
     dup = {}
     for r in rows: dup[r[0]] = dup.get(r[0], 0) + 1
     for D, d, L, l, art, art2 in rows:
+        if (ser, float(D), float(l)) in have:
+            continue
         bid = "IZAR_%s_%s" % (ser, num(D)) + ("_l%d" % l if dup[D] > 1 else "")
+        if bid in taken:
+            bid += "_l%d" % l
         name = "IZAR %s Ø%g %dΦ %s%s · l%g · art.%s%s" % (ser, D, z, tag, (" " + desc) if desc else "", l, art,
                                                         (" / " + art2) if art2 else "")
         bit = {"attribute": {}, "id": bid, "name": name, "parameter": {
@@ -109,8 +123,8 @@ for ser, page, tag, mat, z, desc, rows in S:
         with open(os.path.join(bitdir, bid + ".fctb"), "w", encoding="utf-8") as f:
             json.dump(bit, f, ensure_ascii=False, indent=2)
         tools.append(bid)
-lib = {"label": "IZAR αλουμίνιο 2026 (1 και 2 δόντια)",
+lib = {"label": "IZAR αλουμίνιο 2026 — συμπλήρωμα (1 και 2 δόντια)",
        "tools": [{"nr": i + 1, "path": t + ".fctb"} for i, t in enumerate(tools)], "version": 1}
-with open(os.path.join(libdir, "IZAR_Aluminio.fctl"), "w", encoding="utf-8") as f:
+with open(os.path.join(libdir, "IZAR_Aluminio_2026.fctl"), "w", encoding="utf-8") as f:
     json.dump(lib, f, ensure_ascii=False, indent=2)
 print(len(tools), "bits", len(set(tools)), "unique")

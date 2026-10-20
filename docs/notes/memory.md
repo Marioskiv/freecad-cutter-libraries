@@ -23,6 +23,13 @@
   are gone. One bit per row (coated and uncoated share the geometry; both article numbers are in the name).
   9456/9466 are right-hand cut with a left helix (pictures on p.56/57), so SpindleDirection stays Forward.
   The rows are in tools/izar_2026.py (python3 tools/izar_2026.py libraries rebuilds them).
+- 2026-10-20 (1.2.0) Marios: "keep the old library I gave you at the start, and complete it with what I
+  give you". So IZAR_Aluminio.fctl and its 85 bits are back byte for byte as in 1.0.0 (incl. 4454/4464), and
+  the 2026 rows it lacks (151; same series + diameter + cutting length = already there) are a second library
+  IZAR_Aluminio_2026.fctl, made by tools/izar_2026.py. Two old rows differ from the 2026 catalogue and were
+  kept as he gave them: 9417 Ø5 l42 has L80 (2026: L75); 9417 Ø12 has l55 (2026: l52, added as
+  IZAR_9417_12_l52). The 2018 Carbide Programme PDF he sent has no 4454/4464 (HSSE) and no aluminium 1Z/2Z
+  series that the 2026 catalogue lacks.
 - Repo PUBLIC (needed for the Addon Manager; his yes 2026-10-20). Claude's GitHub app cannot create repos
   (403): Marios created it by hand.
 
@@ -35,5 +42,5 @@
 ## Verified
 - 2026-10-20 real FreeCAD 26.3, clean user folder (tests/run.sh): button on a CAM toolbar; first press copies
   148 files (1.0.0; 275 with the 2026 IZAR set); FreeCAD's CAM lists the 3 libraries and loads 26/85/34 bits
-  (26/212/34 in 1.1.0), every one with a diameter; second press
+  (26/212/34 in 1.1.0; 26/85/151/34 and 300 files in 1.2.0), every one with a diameter; second press
   copies nothing; an edited bit is kept on "No" and replaced on "Yes".

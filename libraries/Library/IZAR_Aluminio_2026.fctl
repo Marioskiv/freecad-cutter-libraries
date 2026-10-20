@@ -1,0 +1,610 @@
+{
+  "label": "IZAR αλουμίνιο 2026 — συμπλήρωμα (1 και 2 δόντια)",
+  "tools": [
+    {
+      "nr": 1,
+      "path": "IZAR_9441_3.fctb"
+    },
+    {
+      "nr": 2,
+      "path": "IZAR_9441_4.fctb"
+    },
+    {
+      "nr": 3,
+      "path": "IZAR_9441_5.fctb"
+    },
+    {
+      "nr": 4,
+      "path": "IZAR_9441_6.fctb"
+    },
+    {
+      "nr": 5,
+      "path": "IZAR_9441_8.fctb"
+    },
+    {
+      "nr": 6,
+      "path": "IZAR_9441_10.fctb"
+    },
+    {
+      "nr": 7,
+      "path": "IZAR_9441_12.fctb"
+    },
+    {
+      "nr": 8,
+      "path": "IZAR_9416_14.fctb"
+    },
+    {
+      "nr": 9,
+      "path": "IZAR_9416_16.fctb"
+    },
+    {
+      "nr": 10,
+      "path": "IZAR_9416_20.fctb"
+    },
+    {
+      "nr": 11,
+      "path": "IZAR_9417_3_l12.fctb"
+    },
+    {
+      "nr": 12,
+      "path": "IZAR_9417_3_l22.fctb"
+    },
+    {
+      "nr": 13,
+      "path": "IZAR_9417_4_l15.fctb"
+    },
+    {
+      "nr": 14,
+      "path": "IZAR_9417_4_l22.fctb"
+    },
+    {
+      "nr": 15,
+      "path": "IZAR_9417_4_l32.fctb"
+    },
+    {
+      "nr": 16,
+      "path": "IZAR_9417_5_l16.fctb"
+    },
+    {
+      "nr": 17,
+      "path": "IZAR_9417_6_l17.fctb"
+    },
+    {
+      "nr": 18,
+      "path": "IZAR_9417_8_l22.fctb"
+    },
+    {
+      "nr": 19,
+      "path": "IZAR_9417_10_l32.fctb"
+    },
+    {
+      "nr": 20,
+      "path": "IZAR_9417_12_l52.fctb"
+    },
+    {
+      "nr": 21,
+      "path": "IZAR_9417_14.fctb"
+    },
+    {
+      "nr": 22,
+      "path": "IZAR_9417_16.fctb"
+    },
+    {
+      "nr": 23,
+      "path": "IZAR_9456_1.fctb"
+    },
+    {
+      "nr": 24,
+      "path": "IZAR_9456_1_5.fctb"
+    },
+    {
+      "nr": 25,
+      "path": "IZAR_9456_2.fctb"
+    },
+    {
+      "nr": 26,
+      "path": "IZAR_9456_2_5.fctb"
+    },
+    {
+      "nr": 27,
+      "path": "IZAR_9456_3.fctb"
+    },
+    {
+      "nr": 28,
+      "path": "IZAR_9456_4.fctb"
+    },
+    {
+      "nr": 29,
+      "path": "IZAR_9456_5.fctb"
+    },
+    {
+      "nr": 30,
+      "path": "IZAR_9456_6.fctb"
+    },
+    {
+      "nr": 31,
+      "path": "IZAR_9456_8.fctb"
+    },
+    {
+      "nr": 32,
+      "path": "IZAR_9456_10.fctb"
+    },
+    {
+      "nr": 33,
+      "path": "IZAR_9456_12.fctb"
+    },
+    {
+      "nr": 34,
+      "path": "IZAR_9466_3_l22.fctb"
+    },
+    {
+      "nr": 35,
+      "path": "IZAR_9466_3_l32.fctb"
+    },
+    {
+      "nr": 36,
+      "path": "IZAR_9466_4_l22.fctb"
+    },
+    {
+      "nr": 37,
+      "path": "IZAR_9466_4_l32.fctb"
+    },
+    {
+      "nr": 38,
+      "path": "IZAR_9466_5_l22.fctb"
+    },
+    {
+      "nr": 39,
+      "path": "IZAR_9466_5_l32.fctb"
+    },
+    {
+      "nr": 40,
+      "path": "IZAR_9466_6_l22.fctb"
+    },
+    {
+      "nr": 41,
+      "path": "IZAR_9466_6_l42.fctb"
+    },
+    {
+      "nr": 42,
+      "path": "IZAR_9466_8_l22.fctb"
+    },
+    {
+      "nr": 43,
+      "path": "IZAR_9466_8_l42.fctb"
+    },
+    {
+      "nr": 44,
+      "path": "IZAR_9466_10_l32.fctb"
+    },
+    {
+      "nr": 45,
+      "path": "IZAR_9466_10_l52.fctb"
+    },
+    {
+      "nr": 46,
+      "path": "IZAR_9466_12_l32.fctb"
+    },
+    {
+      "nr": 47,
+      "path": "IZAR_9466_12_l52.fctb"
+    },
+    {
+      "nr": 48,
+      "path": "IZAR_9419_3.fctb"
+    },
+    {
+      "nr": 49,
+      "path": "IZAR_9419_4.fctb"
+    },
+    {
+      "nr": 50,
+      "path": "IZAR_9419_5.fctb"
+    },
+    {
+      "nr": 51,
+      "path": "IZAR_9419_6.fctb"
+    },
+    {
+      "nr": 52,
+      "path": "IZAR_9419_8.fctb"
+    },
+    {
+      "nr": 53,
+      "path": "IZAR_9419_10.fctb"
+    },
+    {
+      "nr": 54,
+      "path": "IZAR_9411_3.fctb"
+    },
+    {
+      "nr": 55,
+      "path": "IZAR_9411_4.fctb"
+    },
+    {
+      "nr": 56,
+      "path": "IZAR_9411_5.fctb"
+    },
+    {
+      "nr": 57,
+      "path": "IZAR_9411_6.fctb"
+    },
+    {
+      "nr": 58,
+      "path": "IZAR_9411_8.fctb"
+    },
+    {
+      "nr": 59,
+      "path": "IZAR_9411_10.fctb"
+    },
+    {
+      "nr": 60,
+      "path": "IZAR_6420_3.fctb"
+    },
+    {
+      "nr": 61,
+      "path": "IZAR_6420_4.fctb"
+    },
+    {
+      "nr": 62,
+      "path": "IZAR_6420_5.fctb"
+    },
+    {
+      "nr": 63,
+      "path": "IZAR_6420_6.fctb"
+    },
+    {
+      "nr": 64,
+      "path": "IZAR_6420_7.fctb"
+    },
+    {
+      "nr": 65,
+      "path": "IZAR_6420_8.fctb"
+    },
+    {
+      "nr": 66,
+      "path": "IZAR_6420_9.fctb"
+    },
+    {
+      "nr": 67,
+      "path": "IZAR_6420_10.fctb"
+    },
+    {
+      "nr": 68,
+      "path": "IZAR_6420_12.fctb"
+    },
+    {
+      "nr": 69,
+      "path": "IZAR_6420_14.fctb"
+    },
+    {
+      "nr": 70,
+      "path": "IZAR_6420_16.fctb"
+    },
+    {
+      "nr": 71,
+      "path": "IZAR_6420_18.fctb"
+    },
+    {
+      "nr": 72,
+      "path": "IZAR_6420_20.fctb"
+    },
+    {
+      "nr": 73,
+      "path": "IZAR_6420_25.fctb"
+    },
+    {
+      "nr": 74,
+      "path": "IZAR_6420_28.fctb"
+    },
+    {
+      "nr": 75,
+      "path": "IZAR_4420_1.fctb"
+    },
+    {
+      "nr": 76,
+      "path": "IZAR_4420_1_5.fctb"
+    },
+    {
+      "nr": 77,
+      "path": "IZAR_4420_2.fctb"
+    },
+    {
+      "nr": 78,
+      "path": "IZAR_4420_2_5.fctb"
+    },
+    {
+      "nr": 79,
+      "path": "IZAR_4420_3_5.fctb"
+    },
+    {
+      "nr": 80,
+      "path": "IZAR_4420_4_5.fctb"
+    },
+    {
+      "nr": 81,
+      "path": "IZAR_4420_5_5.fctb"
+    },
+    {
+      "nr": 82,
+      "path": "IZAR_4420_6_5.fctb"
+    },
+    {
+      "nr": 83,
+      "path": "IZAR_4420_7.fctb"
+    },
+    {
+      "nr": 84,
+      "path": "IZAR_4420_7_5.fctb"
+    },
+    {
+      "nr": 85,
+      "path": "IZAR_4420_8_5.fctb"
+    },
+    {
+      "nr": 86,
+      "path": "IZAR_4420_9.fctb"
+    },
+    {
+      "nr": 87,
+      "path": "IZAR_4420_9_5.fctb"
+    },
+    {
+      "nr": 88,
+      "path": "IZAR_4420_11.fctb"
+    },
+    {
+      "nr": 89,
+      "path": "IZAR_4420_13.fctb"
+    },
+    {
+      "nr": 90,
+      "path": "IZAR_4420_14.fctb"
+    },
+    {
+      "nr": 91,
+      "path": "IZAR_4420_15.fctb"
+    },
+    {
+      "nr": 92,
+      "path": "IZAR_4420_16.fctb"
+    },
+    {
+      "nr": 93,
+      "path": "IZAR_4420_17.fctb"
+    },
+    {
+      "nr": 94,
+      "path": "IZAR_4420_18.fctb"
+    },
+    {
+      "nr": 95,
+      "path": "IZAR_4420_19.fctb"
+    },
+    {
+      "nr": 96,
+      "path": "IZAR_4420_20.fctb"
+    },
+    {
+      "nr": 97,
+      "path": "IZAR_4420_22.fctb"
+    },
+    {
+      "nr": 98,
+      "path": "IZAR_4420_24.fctb"
+    },
+    {
+      "nr": 99,
+      "path": "IZAR_4420_25.fctb"
+    },
+    {
+      "nr": 100,
+      "path": "IZAR_4420_28.fctb"
+    },
+    {
+      "nr": 101,
+      "path": "IZAR_4420_30.fctb"
+    },
+    {
+      "nr": 102,
+      "path": "IZAR_4420_32.fctb"
+    },
+    {
+      "nr": 103,
+      "path": "IZAR_4420_36.fctb"
+    },
+    {
+      "nr": 104,
+      "path": "IZAR_4420_40.fctb"
+    },
+    {
+      "nr": 105,
+      "path": "IZAR_4426_2.fctb"
+    },
+    {
+      "nr": 106,
+      "path": "IZAR_4426_2_5.fctb"
+    },
+    {
+      "nr": 107,
+      "path": "IZAR_4426_3.fctb"
+    },
+    {
+      "nr": 108,
+      "path": "IZAR_4426_4.fctb"
+    },
+    {
+      "nr": 109,
+      "path": "IZAR_4426_5.fctb"
+    },
+    {
+      "nr": 110,
+      "path": "IZAR_4426_6.fctb"
+    },
+    {
+      "nr": 111,
+      "path": "IZAR_4426_7.fctb"
+    },
+    {
+      "nr": 112,
+      "path": "IZAR_4426_8.fctb"
+    },
+    {
+      "nr": 113,
+      "path": "IZAR_4426_9.fctb"
+    },
+    {
+      "nr": 114,
+      "path": "IZAR_4426_10.fctb"
+    },
+    {
+      "nr": 115,
+      "path": "IZAR_4426_11.fctb"
+    },
+    {
+      "nr": 116,
+      "path": "IZAR_4426_12_l26.fctb"
+    },
+    {
+      "nr": 117,
+      "path": "IZAR_4426_12_l53.fctb"
+    },
+    {
+      "nr": 118,
+      "path": "IZAR_4426_14_l26.fctb"
+    },
+    {
+      "nr": 119,
+      "path": "IZAR_4426_14_l53.fctb"
+    },
+    {
+      "nr": 120,
+      "path": "IZAR_4426_16_l32.fctb"
+    },
+    {
+      "nr": 121,
+      "path": "IZAR_4426_16_l63.fctb"
+    },
+    {
+      "nr": 122,
+      "path": "IZAR_4426_18_l32.fctb"
+    },
+    {
+      "nr": 123,
+      "path": "IZAR_4426_18_l63.fctb"
+    },
+    {
+      "nr": 124,
+      "path": "IZAR_4426_20_l38.fctb"
+    },
+    {
+      "nr": 125,
+      "path": "IZAR_4426_20_l75.fctb"
+    },
+    {
+      "nr": 126,
+      "path": "IZAR_4426_22.fctb"
+    },
+    {
+      "nr": 127,
+      "path": "IZAR_4426_25.fctb"
+    },
+    {
+      "nr": 128,
+      "path": "IZAR_4426_28.fctb"
+    },
+    {
+      "nr": 129,
+      "path": "IZAR_4426_30.fctb"
+    },
+    {
+      "nr": 130,
+      "path": "IZAR_4426_32.fctb"
+    },
+    {
+      "nr": 131,
+      "path": "IZAR_4412_3.fctb"
+    },
+    {
+      "nr": 132,
+      "path": "IZAR_4412_4.fctb"
+    },
+    {
+      "nr": 133,
+      "path": "IZAR_4412_5.fctb"
+    },
+    {
+      "nr": 134,
+      "path": "IZAR_4412_6.fctb"
+    },
+    {
+      "nr": 135,
+      "path": "IZAR_4412_7.fctb"
+    },
+    {
+      "nr": 136,
+      "path": "IZAR_4412_8.fctb"
+    },
+    {
+      "nr": 137,
+      "path": "IZAR_4412_10.fctb"
+    },
+    {
+      "nr": 138,
+      "path": "IZAR_4413_3.fctb"
+    },
+    {
+      "nr": 139,
+      "path": "IZAR_4413_4.fctb"
+    },
+    {
+      "nr": 140,
+      "path": "IZAR_4413_5.fctb"
+    },
+    {
+      "nr": 141,
+      "path": "IZAR_4413_6.fctb"
+    },
+    {
+      "nr": 142,
+      "path": "IZAR_4414_4.fctb"
+    },
+    {
+      "nr": 143,
+      "path": "IZAR_4414_5.fctb"
+    },
+    {
+      "nr": 144,
+      "path": "IZAR_4414_6.fctb"
+    },
+    {
+      "nr": 145,
+      "path": "IZAR_4414_8.fctb"
+    },
+    {
+      "nr": 146,
+      "path": "IZAR_4414_10.fctb"
+    },
+    {
+      "nr": 147,
+      "path": "IZAR_4415_5.fctb"
+    },
+    {
+      "nr": 148,
+      "path": "IZAR_4415_6.fctb"
+    },
+    {
+      "nr": 149,
+      "path": "IZAR_4416_4.fctb"
+    },
+    {
+      "nr": 150,
+      "path": "IZAR_4416_5.fctb"
+    },
+    {
+      "nr": 151,
+      "path": "IZAR_4417_5.fctb"
+    }
+  ],
+  "version": 1
+}
