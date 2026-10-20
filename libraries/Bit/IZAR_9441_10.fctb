@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9441_10",
+  "name": "IZAR 9441 Ø10 1Φ ΣΚ γυαλισμένη · l30 · art.82939 / 82938",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "30.000 mm",
+    "Diameter": "10.000 mm",
+    "Flutes": 1,
+    "Length": "72.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "10.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

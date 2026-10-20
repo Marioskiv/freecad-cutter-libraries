@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_6420_4",
+  "name": "IZAR 6420 Ø4 2Φ PMX · l7 · art.45250 / 45400",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "7.000 mm",
+    "Diameter": "4.000 mm",
+    "Flutes": 2,
+    "Length": "51.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "6.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

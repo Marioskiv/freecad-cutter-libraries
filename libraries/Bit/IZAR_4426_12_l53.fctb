@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4426_12_l53",
+  "name": "IZAR 4426 Ø12 2Φ HSSE μακριά · l53 · art.13494 / 13497",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "53.000 mm",
+    "Diameter": "12.000 mm",
+    "Flutes": 2,
+    "Length": "110.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "12.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9456_1_5",
+  "name": "IZAR 9456 Ø1.5 1Φ ΣΚ αριστερή έλικα · l4 · art.78369 / 60527",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "4.000 mm",
+    "Diameter": "1.500 mm",
+    "Flutes": 1,
+    "Length": "38.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "3.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

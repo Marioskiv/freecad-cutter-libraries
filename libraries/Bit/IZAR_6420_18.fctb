@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_6420_18",
+  "name": "IZAR 6420 Ø18 2Φ PMX · l19 · art.45259 / 45410",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "19.000 mm",
+    "Diameter": "18.000 mm",
+    "Flutes": 2,
+    "Length": "79.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "16.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

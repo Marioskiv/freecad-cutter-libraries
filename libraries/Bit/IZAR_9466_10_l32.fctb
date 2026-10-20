@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9466_10_l32",
+  "name": "IZAR 9466 Ø10 1Φ ΣΚ αριστερή έλικα μακριά · l32 · art.89262 / 89276",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "32.000 mm",
+    "Diameter": "10.000 mm",
+    "Flutes": 1,
+    "Length": "100.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "10.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

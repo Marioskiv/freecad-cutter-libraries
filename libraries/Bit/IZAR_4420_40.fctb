@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4420_40",
+  "name": "IZAR 4420 Ø40 2Φ HSSE · l38 · art.44354 / 41945",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "38.000 mm",
+    "Diameter": "40.000 mm",
+    "Flutes": 2,
+    "Length": "130.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "40.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

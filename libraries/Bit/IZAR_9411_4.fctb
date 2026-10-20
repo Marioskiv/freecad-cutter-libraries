@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9411_4",
+  "name": "IZAR 9411 Ø4 1Φ ΣΚ θερμοπλαστικά · l12 · art.13078 / 13123",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "12.000 mm",
+    "Diameter": "4.000 mm",
+    "Flutes": 1,
+    "Length": "40.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "4.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

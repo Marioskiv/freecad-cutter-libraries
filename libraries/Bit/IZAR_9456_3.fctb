@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9456_3",
+  "name": "IZAR 9456 Ø3 1Φ ΣΚ αριστερή έλικα · l12 · art.78379 / 60734",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "12.000 mm",
+    "Diameter": "3.000 mm",
+    "Flutes": 1,
+    "Length": "38.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "3.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

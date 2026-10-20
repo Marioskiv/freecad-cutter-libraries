@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9416_16",
+  "name": "IZAR 9416 Ø16 1Φ ΣΚ γυαλισμένη · l52 · art.26738 / 59961",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "52.000 mm",
+    "Diameter": "16.000 mm",
+    "Flutes": 1,
+    "Length": "100.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "16.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4412_10",
+  "name": "IZAR 4412 Ø10 1Φ HSS · l15 · art.44105",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "15.000 mm",
+    "Diameter": "10.000 mm",
+    "Flutes": 1,
+    "Length": "80.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "10.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

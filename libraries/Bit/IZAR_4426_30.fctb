@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_4426_30",
+  "name": "IZAR 4426 Ø30 2Φ HSSE μακριά · l45 · art.81024 / 17201",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "45.000 mm",
+    "Diameter": "30.000 mm",
+    "Flutes": 2,
+    "Length": "166.000 mm",
+    "Material": "HSS",
+    "ShankDiameter": "25.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}

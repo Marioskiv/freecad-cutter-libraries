@@ -1,0 +1,19 @@
+{
+  "attribute": {},
+  "id": "IZAR_9417_6_l17",
+  "name": "IZAR 9417 Ø6 1Φ ΣΚ γυαλισμένη μακριά · l17 · art.21586 / 60198",
+  "parameter": {
+    "Chipload": "0.000 mm",
+    "CuttingEdgeHeight": "17.000 mm",
+    "Diameter": "6.000 mm",
+    "Flutes": 1,
+    "Length": "85.000 mm",
+    "Material": "Carbide",
+    "ShankDiameter": "6.000 mm",
+    "SpindleDirection": "Forward",
+    "Units": "Metric"
+  },
+  "shape": "endmill.fcstd",
+  "shape-type": "Endmill",
+  "version": 2
+}
