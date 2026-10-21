@@ -1,0 +1,318 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YG-1 ALU-POWER · Οδηγίες</title><style>
+body{font-family:Segoe UI,Arial,sans-serif;max-width:900px;margin:24px auto;padding:0 16px;color:#1e293b;line-height:1.5;background:#fff}
+h1{color:#1d4ed8}h2{border-bottom:2px solid #e2e8f0;padding-bottom:4px;margin-top:32px}
+table{border-collapse:collapse;margin:8px 0 16px}th,td{border:1px solid #cbd5e1;padding:4px 10px;text-align:center}
+th{background:#1e3a8a;color:#fff}tr:nth-child(even) td{background:#f1f5f9}code{background:#f1f5f9;padding:1px 4px;border-radius:4px}
+</style></head><body><h1>Βιβλιοθήκη YG-1 ALU-POWER για το FreeCAD 26.3</h1>
+<p>Φρέζες καρβιδίου για <strong>αλουμίνιο</strong>, με 1 και 2 δόντια. Οι διαστάσεις είναι από τον κατάλογο
+YG-1 «YE-AP25 EUROPE». Το όνομα κάθε κοπτικού έχει τον κωδικό της YG-1 (EDP).</p>
+<table>
+<thead>
+<tr>
+<th>T</th>
+<th>Σειρά</th>
+<th>Τι είναι</th>
+<th>Διάμετροι</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1–T8</td>
+<td>E5E47</td>
+<td>1 δόντι</td>
+<td>Ø2, 3, 4, 5, 6, 8, 10, 12</td>
+</tr>
+<tr>
+<td>T9–T15</td>
+<td>E5E48</td>
+<td>2 δόντια, κοντή (πιο άκαμπτη)</td>
+<td>Ø3, 4, 5, 6, 8, 10, 12</td>
+</tr>
+<tr>
+<td>T16–T22</td>
+<td>E5522</td>
+<td>2 δόντια, μακριά (για βαθιές τσέπες)</td>
+<td>Ø3, 4, 5, 6, 8, 10, 12</td>
+</tr>
+<tr>
+<td>T23–T26</td>
+<td>E5910</td>
+<td>2 δόντια, σφαιρική μύτη (3D)</td>
+<td>Ø6, 8, 10, 12</td>
+</tr>
+</tbody>
+</table>
+<p>Ο αριθμός θέσης T είναι η σειρά του κοπτικού στη βιβλιοθήκη.</p>
+<h2>Πώς τη φορτώνεις</h2>
+<ol><li>Εγκατέστησε το addon <b>CutterLibraries</b> από το Addon Manager (Custom repository <code>https://github.com/Marioskiv/freecad-cutter-libraries</code>, branch <code>main</code>) και κάνε επανεκκίνηση του FreeCAD.</li>
+<li>Δεν πατάς τίποτα: με το άνοιγμα του FreeCAD τα κοπτικά μπαίνουν μόνα τους.</li>
+<li>CAM → <b>Toolbit Library Manager</b> → διάλεξε τη βιβλιοθήκη «YG-1 Alu-Power (1 και 2 δόντια)».</li></ol>
+<p>Αν αλλάξεις ένα κοπτικό ή τη βιβλιοθήκη στο FreeCAD (π.χ. τον αριθμό T), η αλλαγή σου μένει μέχρι την επόμενη ενημέρωση του addon. Τότε αντικαθίστανται όλα με τα αρχεία του addon. Αν σβήσεις κάποιο, ξαναμπαίνει στο επόμενο άνοιγμα.</p>
+<h2>Στροφές και πρόωση από τον κατάλογο (αλουμίνιο έλασης, VDI 21–22)</h2>
+<p>Οι τιμές είναι του καταλόγου, για <strong>επαγγελματικό κέντρο κατεργασίας με ψυκτικό υγρό</strong>.
+Σε DIY μηχανή είναι μόνο σημείο εκκίνησης (δες πιο κάτω).</p>
+<p><strong>fz</strong> = πάχος αποβλίττου ανά δόντι (mm) · <strong>Πρόωση = Στροφές × fz × δόντια</strong> (mm/min)
+· <strong>Ap</strong> = βάθος πάσου · <strong>Ae</strong> = πλάτος πάσου · <strong>D</strong> = διάμετρος</p>
+<h3>1 δόντι E5E47: αυλάκι (Ae = 1.0D, Ap = 1.5D στον κατάλογο)</h3>
+<table>
+<thead>
+<tr>
+<th>Ø</th>
+<th>Vc m/min</th>
+<th>fz</th>
+<th>Στροφές</th>
+<th>Πρόωση mm/min</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>145</td>
+<td>0.065</td>
+<td>23077</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>3</td>
+<td>170</td>
+<td>0.094</td>
+<td>18038</td>
+<td>1696</td>
+</tr>
+<tr>
+<td>4</td>
+<td>190</td>
+<td>0.120</td>
+<td>15120</td>
+<td>1814</td>
+</tr>
+<tr>
+<td>5</td>
+<td>190</td>
+<td>0.150</td>
+<td>12096</td>
+<td>1814</td>
+</tr>
+<tr>
+<td>6</td>
+<td>190</td>
+<td>0.180</td>
+<td>10080</td>
+<td>1814</td>
+</tr>
+<tr>
+<td>8</td>
+<td>195</td>
+<td>0.244</td>
+<td>7759</td>
+<td>1893</td>
+</tr>
+<tr>
+<td>10</td>
+<td>190</td>
+<td>0.333</td>
+<td>6048</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>12</td>
+<td>190</td>
+<td>0.440</td>
+<td>5040</td>
+<td>2218</td>
+</tr>
+</tbody>
+</table>
+<h3>2 δόντια E5E48 / E5522: αυλάκι (Ae = 1.0D, Ap = 0.5D)</h3>
+<table>
+<thead>
+<tr>
+<th>Ø</th>
+<th>Vc</th>
+<th>fz</th>
+<th>Στροφές</th>
+<th>Πρόωση</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>95</td>
+<td>0.035</td>
+<td>10080</td>
+<td>706</td>
+</tr>
+<tr>
+<td>4</td>
+<td>125</td>
+<td>0.045</td>
+<td>9947</td>
+<td>895</td>
+</tr>
+<tr>
+<td>5</td>
+<td>155</td>
+<td>0.050</td>
+<td>9868</td>
+<td>987</td>
+</tr>
+<tr>
+<td>6</td>
+<td>190</td>
+<td>0.060</td>
+<td>10080</td>
+<td>1210</td>
+</tr>
+<tr>
+<td>8</td>
+<td>200</td>
+<td>0.088</td>
+<td>7958</td>
+<td>1401</td>
+</tr>
+<tr>
+<td>10</td>
+<td>250</td>
+<td>0.106</td>
+<td>7958</td>
+<td>1687</td>
+</tr>
+<tr>
+<td>12</td>
+<td>300</td>
+<td>0.131</td>
+<td>7958</td>
+<td>2085</td>
+</tr>
+</tbody>
+</table>
+<h3>2 δόντια E5E48 / E5522: πλάγιο κόψιμο (Ap = 1.0D, Ae = 0.25D ως Ø10, 0.5D από Ø12)</h3>
+<table>
+<thead>
+<tr>
+<th>Ø</th>
+<th>Vc</th>
+<th>fz</th>
+<th>Στροφές</th>
+<th>Πρόωση</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>95</td>
+<td>0.045</td>
+<td>10080</td>
+<td>907</td>
+</tr>
+<tr>
+<td>4</td>
+<td>125</td>
+<td>0.055</td>
+<td>9947</td>
+<td>1094</td>
+</tr>
+<tr>
+<td>5</td>
+<td>155</td>
+<td>0.065</td>
+<td>9868</td>
+<td>1283</td>
+</tr>
+<tr>
+<td>6</td>
+<td>190</td>
+<td>0.075</td>
+<td>10080</td>
+<td>1512</td>
+</tr>
+<tr>
+<td>8</td>
+<td>200</td>
+<td>0.113</td>
+<td>7958</td>
+<td>1798</td>
+</tr>
+<tr>
+<td>10</td>
+<td>250</td>
+<td>0.131</td>
+<td>7958</td>
+<td>2085</td>
+</tr>
+<tr>
+<td>12</td>
+<td>300</td>
+<td>0.163</td>
+<td>7958</td>
+<td>2594</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Μακριά κοπτικά (E5522), ανάλογα με το μήκος κοπής:</strong>
+- <strong>Αυλάκι:</strong> έως 3D κρατάς ό,τι λέει ο πίνακας. Έως 5D βάζεις στροφές 70% και πρόωση 80%. Πάνω από 5D ο κατάλογος δεν το συνιστά.
+- <strong>Πλάγιο κόψιμο:</strong> έως 5D, στροφές 70% και πρόωση 70%. Έως 7D, στροφές 40% και πρόωση 70%.</p>
+<h3>2 δόντια σφαιρική E5910 (Ae = 0.2D, Ap = 0.5D)</h3>
+<table>
+<thead>
+<tr>
+<th>Ø</th>
+<th>Vc</th>
+<th>fz</th>
+<th>Στροφές</th>
+<th>Πρόωση</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>270</td>
+<td>0.049</td>
+<td>14324</td>
+<td>1404</td>
+</tr>
+<tr>
+<td>8</td>
+<td>280</td>
+<td>0.071</td>
+<td>11141</td>
+<td>1582</td>
+</tr>
+<tr>
+<td>10</td>
+<td>350</td>
+<td>0.084</td>
+<td>11141</td>
+<td>1872</td>
+</tr>
+<tr>
+<td>12</td>
+<td>420</td>
+<td>0.107</td>
+<td>11141</td>
+<td>2384</td>
+</tr>
+</tbody>
+</table>
+<h2>Για DIY μηχανή (σημείο εκκίνησης)</h2>
+<ul>
+<li><strong>Αν η άτρακτός σου δεν φτάνει τις στροφές του πίνακα:</strong> κράτα το ίδιο <strong>fz</strong> και υπολόγισε
+  ξανά την πρόωση: πρόωση = (οι στροφές σου) × fz × δόντια.
+  Παράδειγμα: Ø6 με 2 δόντια σε αυλάκι, με 8000 στροφές: 8000 × 0.060 × 2 = 960 mm/min.</li>
+<li><strong>Βάθος:</strong> ξεκίνα με περίπου το <strong>μισό Ap</strong> του καταλόγου. Στο 1 δόντι ο κατάλογος λέει 1.5D σε
+  αυλάκι, που είναι πολύ για αρχή. Ξεκίνα με 0.5D και ανέβα σιγά-σιγά.</li>
+<li><strong>Αποβλίττωση:</strong> στο αλουμίνιο το μεγαλύτερο πρόβλημα είναι τα ρινίσματα που κολλάνε.
+  Βάλε αέρα ή ψεκασμό (mist) στο κοπτικό.</li>
+<li><strong>Αν ακούγεται τρεμούλιασμα (chatter):</strong> μείωσε πρώτα το βάθος, όχι την πρόωση. Πολύ μικρό fz
+  τρίβει αντί να κόβει και καίει το κοπτικό.</li>
+<li><strong>1 ή 2 δόντια;</strong> Το 1 δόντι αδειάζει πιο εύκολα τα ρινίσματα και θέλει λιγότερη δύναμη (καλό για
+  αυλάκια σε DIY μηχανή). Το 2 δόντια δίνει καλύτερο φινίρισμα και περισσότερη πρόωση με τις ίδιες
+  στροφές.</li>
+</ul>
+<h2>Στο FreeCAD</h2>
+<p>Οι στροφές και η πρόωση <strong>δεν</strong> αποθηκεύονται στο κοπτικό. Μπαίνουν στον <strong>Tool Controller</strong> κάθε
+Job (Spindle Speed, Horiz Feed, Vert Feed). Για Vert Feed (βύθισμα) ξεκίνα με περίπου το 1/3 της
+οριζόντιας πρόωσης, ή καλύτερα κάνε είσοδο με ράμπα ή έλικα (Ramp/Helix).</p>
+<p>Στο E5522100 (Ø10, μακριά) ο κατάλογος γράφει συνολικό μήκος «7». Μάλλον είναι τυπογραφικό λάθος
+και είναι 72, οπότε έβαλα 72. Μέτρησέ το όταν το πάρεις.</p></body></html>

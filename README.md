@@ -27,6 +27,20 @@ Addon για το FreeCAD (1.1 και νεότερο, δοκιμασμένο σ�
 Χωρίς addon γίνεται και με το χέρι: αντέγραψε τα `libraries/Bit/*.fctb` στο `CamAssets/Tools/Bit` και τα
 `libraries/Library/*.fctl` στο `CamAssets/Tools/Library` του φακέλου χρήστη του FreeCAD.
 
+## Οδηγίες: στροφές και πρόωση
+Από τους καταλόγους των κατασκευαστών, στα ελληνικά:
+
+| Αρχείο | Για ποια βιβλιοθήκη |
+|---|---|
+| [`docs/odigies/YG1.html`](docs/odigies/YG1.html) | YG-1 Alu-Power |
+| [`docs/odigies/IZAR.html`](docs/odigies/IZAR.html) | IZAR αλουμίνιο (η αρχική) |
+| [`docs/odigies/IZAR_nees.html`](docs/odigies/IZAR_nees.html) | IZAR 2026 συμπλήρωμα, IZAR 235, IZAR σκληρομέταλλο 2018 |
+| [`docs/odigies/Amana.html`](docs/odigies/Amana.html) | Amana για αλουμίνιο |
+
+Μετά την εγκατάσταση τα βρίσκεις και στον υπολογιστή σου, στον φάκελο του addon:
+`C:\Users\<όνομα>\AppData\Roaming\FreeCAD\v26-3\Mod\CutterLibraries\docs\odigies\`. Άνοιξέ τα με διπλό κλικ
+(ανοίγουν στον browser). Στο GitHub φαίνονται ως κώδικας: εκεί πάτα «Download raw file» και άνοιξε το αρχείο που κατέβηκε.
+
 ## Στροφές και πρόωση
 Η βιβλιοθήκη έχει μόνο τη **γεωμετρία** κάθε κοπτικού (διάμετρος, μήκη, δόντια). Στροφές και πρόωση μπαίνουν στο
 **Tool Controller** κάθε Job, από τον κατάλογο του κατασκευαστή: πρόωση = στροφές × δόντια × φορτίο ανά δόντι (fz).
@@ -36,8 +50,9 @@ Addon για το FreeCAD (1.1 και νεότερο, δοκιμασμένο σ�
 |---|---|
 | `libraries/` | τα αρχεία `.fctl` (βιβλιοθήκες) και `.fctb` (κοπτικά) |
 | `addon/` | η αντιγραφή στο άνοιγμα του FreeCAD (`cutterlibs.py`, `InitGui.py`) |
-| `tools/` | `izar_2026.py`, `izar_extra.py`: φτιάχνουν τα συμπληρώματα IZAR από τους πίνακες των καταλόγων |
+| `tools/` | `izar_2026.py`, `izar_extra.py`: φτιάχνουν τα συμπληρώματα IZAR · `odigies_izar.py`: φτιάχνει το `IZAR_nees.html` |
 | `tests/` | δοκιμή σε πραγματικό FreeCAD: `FREECAD=/path/to/freecad sh tests/run.sh` |
+| `docs/odigies/` | οδηγίες με στροφές και πρόωση |
 | `docs/notes/` | σημειώσεις (μνήμη, εκκρεμότητες) |
 
 Copyright (c) 2026 Marioskiv — άδεια MIT (`LICENSE`). Οι διαστάσεις των κοπτικών είναι από τους καταλόγους των

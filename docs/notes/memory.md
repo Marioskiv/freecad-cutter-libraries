@@ -45,6 +45,14 @@
   files; between updates an edited cutter is kept. start() first calls cam_assets.setup(): CAM copies its
   own Default library + sample bits only while the folder is EMPTY, so copying ours first would have lost
   them (seen in the test, fixed). start() also removes the empty CAM toolbar left by 1.x.
+- 2026-10-21 (1.4.1) Marios: "yes, do A B C D". docs/odigies/: his 3 guides of 2026-10-17 (YG1, IZAR, Amana
+  .html; he re-uploaded them) with only "how to load" rewritten for the auto-copy, + IZAR_nees.html (made by
+  tools/odigies_izar.py) for the 3 later IZAR libraries. Checked against the catalogues before publishing:
+  YG-1 (EUROPE.pdf p.27/29/30-31: E5E47, E5E48/E5522 slot+side, long-tool ratios, E5910) all equal; IZAR
+  (235 p.242/245; 2018 p.28/31/34) all equal; Amana: all 34 rows (Ø, flutes, lengths, shank, rpm, feed,
+  plunge) equal to the Fusion file, and its 2 inconsistencies (51470, 51408) are real. T numbers in the guides
+  equal the .fctl order. No aluminium data in the catalogue for 4422/4470 and 9470/9475 (said in the guide).
+  9417 Ø5 L80 / Ø12 l55 are the 2018 catalogue's values (2026: L75 / l52); both kept.
 - Repo PUBLIC (needed for the Addon Manager; his yes 2026-10-20). Claude's GitHub app cannot create repos
   (403): Marios created it by hand.
 
