@@ -1,9 +1,11 @@
-# Cutter Libraries — puts the cutter libraries of this addon into FreeCAD's CAM (one button).
+# Cutter Libraries — puts the cutter libraries of this addon into FreeCAD's CAM, by itself, at start-up.
 #
 # FreeCAD 26.3 keeps tool libraries in <CAM asset folder>/Tools/Library/*.fctl and the cutters they list
 # in <CAM asset folder>/Tools/Bit/*.fctb (Path.Preferences.getAssetPath(); by default the user folder's
-# CamAssets). The button copies this addon's files there. A file that is already there and different
-# (for example a cutter you edited) is overwritten only if you say so.
+# CamAssets), and CAM → Toolbit Library Manager shows what is there. At every start this addon copies the
+# files that are missing. The first start of a new version of the addon (installed or updated) replaces
+# ALL of its files, so an update always wins (Marios, 2026-10-21); between updates a cutter you edited is
+# kept. Files that are not this addon's (your own cutters, FreeCAD's Default library) are never touched.
 #
 # Copyright (c) 2026 Marioskiv
 # https://github.com/Marioskiv/freecad-cutter-libraries
@@ -17,8 +19,8 @@ import FreeCAD as App
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SOURCE = os.path.join(os.path.dirname(HERE), "libraries")
-ICON = os.path.join(HERE, "Resources", "CutterLibraries.svg")
-TOOLBAR = "User parameter:BaseApp/Workbench/CAMWorkbench/Toolbar/CutterLibraries"
+PARAMS = "User parameter:BaseApp/Preferences/Mod/CutterLibraries"
+OLD_TOOLBARS = "User parameter:BaseApp/Workbench/CAMWorkbench/Toolbar"  # 1.x had a button there
 
 
 def target_root():
@@ -55,6 +57,54 @@ def install(overwrite=False, target=None):
     return len(todo), (0 if overwrite else len(changed))
 
 
+def version():
+    """This addon's version, from its package.xml."""
+    import xml.etree.ElementTree as ET
+    root = ET.parse(os.path.join(os.path.dirname(HERE), "package.xml")).getroot()
+    for el in root:
+        if el.tag.split("}")[-1] == "version":
+            return el.text.strip()
+    return ""
+
+
+def sync(target=None):
+    """Copies the missing files; on the first start of a new version, replaces all of this addon's files.
+    Returns (copied, new_version)."""
+    grp = App.ParamGet(PARAMS)
+    ver = version()
+    new_version = grp.GetString("InstalledVersion", "") != ver
+    copied, _kept = install(overwrite=new_version, target=target)
+    grp.SetString("InstalledVersion", ver)
+    return copied, new_version
+
+
+def remove_old_button():
+    """1.x put an install button on a CAM toolbar; its toolbar would stay behind, empty."""
+    grp = App.ParamGet(OLD_TOOLBARS)
+    if grp.HasGroup("CutterLibraries"):
+        grp.RemGroup("CutterLibraries")
+
+
+def start():
+    """Run once the GUI is up (InitGui). Never raises: a problem is only reported."""
+    try:
+        remove_old_button()
+        # CAM puts its own Default library and sample cutters into the folder only while it is empty, so
+        # let it do that first; otherwise our files would make it skip them.
+        try:
+            from Path.Tool import cam_assets
+            cam_assets.setup()
+        except Exception as e:
+            App.Console.PrintWarning("Cutter Libraries: CAM's own assets were not set up first: %s\n" % e)
+        copied, new_version = sync()
+        if copied:
+            App.Console.PrintMessage("Cutter Libraries %s: %d αρχεία κοπτικών μπήκαν στο CAM (%s)%s.\n"
+                                     % (version(), copied, target_root(),
+                                        ", νέα έκδοση: αντικαταστάθηκαν όλα" if new_version else ""))
+    except Exception as e:
+        App.Console.PrintError("Cutter Libraries: τα κοπτικά δεν μπήκαν στο CAM: %s\n" % e)
+
+
 def libraries():
     """The libraries of this addon: [(file name, label, number of cutters)]."""
     import json
@@ -65,70 +115,3 @@ def libraries():
             d = json.load(f)
         out.append((name, d.get("label", name), len(d.get("tools", []))))
     return out
-
-
-if App.GuiUp:
-    import FreeCADGui as Gui
-    from PySide import QtGui
-
-    try:
-        from PySide import QtWidgets
-    except ImportError:  # pragma: no cover
-        QtWidgets = QtGui
-
-    def _ask(parent, title, text):
-        """Yes/No; the tests replace it."""
-        B = QtWidgets.QMessageBox
-        return B.question(parent, title, text, B.Yes | B.No, B.No) == B.Yes
-
-    def _tell(parent, title, text):
-        QtWidgets.QMessageBox.information(parent, title, text)
-
-    class InstallCommand:
-        def GetResources(self):
-            return {"Pixmap": ICON,
-                    "MenuText": "Εγκατάσταση βιβλιοθηκών κοπτικών",
-                    "ToolTip": "Βάζει στο CAM τις βιβλιοθήκες κοπτικών YG-1, IZAR και Amana. "
-                               "Ρωτάει πριν αλλάξει κοπτικό που έχεις ήδη και είναι διαφορετικό."}
-
-        def IsActive(self):
-            return True
-
-        def Activated(self):
-            mw = Gui.getMainWindow()
-            try:
-                target = target_root()
-                new, same, changed = plan(target)
-                overwrite = False
-                if changed:
-                    names = ", ".join(os.path.basename(d) for _s, d in changed[:8])
-                    more = " κ.ά." if len(changed) > 8 else ""
-                    overwrite = _ask(mw, "Βιβλιοθήκες κοπτικών",
-                                     "%d αρχεία υπάρχουν ήδη στο FreeCAD σου και είναι διαφορετικά "
-                                     "(ίσως τα άλλαξες): %s%s.\n\nΝα αντικατασταθούν με αυτά του addon;\n"
-                                     "«Όχι»: μένουν τα δικά σου και μπαίνουν μόνο τα καινούργια."
-                                     % (len(changed), names, more))
-                copied, kept = install(overwrite, target)
-                libs = "\n".join("• %s (%d κοπτικά)" % (label, n) for _f, label, n in libraries())
-                _tell(mw, "Βιβλιοθήκες κοπτικών",
-                      "Έτοιμο: %d αρχεία αντιγράφηκαν, %d ήταν ήδη ίδια%s.\n\n%s\n\n"
-                      "Άνοιξε CAM → Toolbit Library Manager και διάλεξε τη βιβλιοθήκη "
-                      "(αν ήταν ήδη ανοιχτό, κλείσ' το και άνοιξέ το ξανά).\n"
-                      "Φάκελος: %s"
-                      % (copied, len(same), (", %d κράτησες τα δικά σου" % kept) if kept else "",
-                         libs, target))
-            except Exception as e:
-                _tell(mw, "Βιβλιοθήκες κοπτικών", "Δεν έγινε η εγκατάσταση: %s" % e)
-
-    def ensure_toolbar():
-        grp = App.ParamGet(TOOLBAR)
-        grp.SetString("Name", "Βιβλιοθήκες κοπτικών")
-        if not grp.GetBool("Created", False):
-            grp.SetBool("Active", True)
-            grp.SetBool("Created", True)
-        if not grp.GetString("CutterLibraries_Install", ""):
-            grp.SetString("CutterLibraries_Install", "cutterlibs")
-
-    def install_gui():
-        Gui.addCommand("CutterLibraries_Install", InstallCommand())
-        ensure_toolbar()

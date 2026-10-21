@@ -39,6 +39,12 @@
   have no neck. 9452 (corner rounding) not added.
 - His catalogues are kept in the session uploads (YG-1 YE-AP25 EUROPE.pdf, IZAR_235.pdf, Carbide_programme.pdf,
   ALUMINIO_2026.pdf, the Fusion .tools files); sent back to him 2026-10-20 after he lost his copies.
+- 2026-10-21 (1.4.0) Marios: "yes, without a button" + "replace everything". No button any more: at every
+  FreeCAD start (InitGui → QTimer → cutterlibs.start) the missing files are copied; the first start of a new
+  addon version (param BaseApp/Preferences/Mod/CutterLibraries/InstalledVersion) replaces ALL the addon's
+  files; between updates an edited cutter is kept. start() first calls cam_assets.setup(): CAM copies its
+  own Default library + sample bits only while the folder is EMPTY, so copying ours first would have lost
+  them (seen in the test, fixed). start() also removes the empty CAM toolbar left by 1.x.
 - Repo PUBLIC (needed for the Addon Manager; his yes 2026-10-20). Claude's GitHub app cannot create repos
   (403): Marios created it by hand.
 
@@ -49,6 +55,9 @@
 - `cam_assets.fetch(asset_type="toolbitlibrary")` lists libraries; `cam_assets.get(uri, depth=1)` loads the bits.
 
 ## Verified
+- 2026-10-21 1.4.0 real FreeCAD 26.3, clean user folder: no button; start-up copied all 486 files; CAM lists
+  Default + the 6 libraries (26/85/151/75/109/34), every bit with a diameter; same version: missing file comes
+  back, edited cutter kept; new version: edited cutter replaced; a file not ours untouched; 1.x toolbar removed.
 - 2026-10-20 real FreeCAD 26.3, clean user folder (tests/run.sh): button on a CAM toolbar; first press copies
   148 files (1.0.0; 275 with the 2026 IZAR set); FreeCAD's CAM lists the 3 libraries and loads 26/85/34 bits
   (26/212/34 in 1.1.0; 26/85/151/34 and 300 files in 1.2.0; 26/85/151/75/109/34 and 486 files in 1.3.0), every one with a diameter; second press
