@@ -12,12 +12,17 @@ Addon για το FreeCAD (1.1 και νεότερο, δοκιμασμένο σ�
 | Amana για αλουμίνιο (από τη βιβλιοθήκη Fusion της Amana) | 34 |
 
 ## Εγκατάσταση
-1. FreeCAD → **Edit → Preferences → Addon Manager** → Custom repositories → πρόσθεσε
+1. FreeCAD → **Tools → Addon Manager** → ⚙ → Custom repositories → πρόσθεσε
    `https://github.com/Marioskiv/freecad-cutter-libraries`, branch `main`.
 2. Addon Manager → **CutterLibraries** → Install → επανεκκίνηση του FreeCAD.
-3. Στο **CAM** εμφανίζεται η εργαλειοθήκη «Βιβλιοθήκες κοπτικών». Πάτα το κουμπί: τα κοπτικά μπαίνουν στο FreeCAD.
-   Αν έχεις αλλάξει ήδη κάποιο κοπτικό, σε ρωτάει πριν το αντικαταστήσει.
-4. **CAM → Toolbit Library Manager** → διάλεξε τη βιβλιοθήκη.
+3. Δεν πατάς τίποτα: με το άνοιγμα του FreeCAD τα κοπτικά μπαίνουν μόνα τους.
+   Άνοιξε **CAM → Toolbit Library Manager** και διάλεξε βιβλιοθήκη.
+
+Πώς δουλεύει:
+- Σε κάθε άνοιγμα μπαίνει ό,τι λείπει.
+- Στο πρώτο άνοιγμα μετά από εγκατάσταση ή ενημέρωση του addon **αντικαθίστανται όλα** τα αρχεία του addon.
+  Ανάμεσα σε δύο ενημερώσεις, ένα κοπτικό που άλλαξες μένει όπως το άλλαξες.
+- Τα δικά σου κοπτικά και η βιβλιοθήκη `Default` του FreeCAD δεν αγγίζονται ποτέ.
 
 Χωρίς addon γίνεται και με το χέρι: αντέγραψε τα `libraries/Bit/*.fctb` στο `CamAssets/Tools/Bit` και τα
 `libraries/Library/*.fctl` στο `CamAssets/Tools/Library` του φακέλου χρήστη του FreeCAD.
@@ -30,7 +35,7 @@ Addon για το FreeCAD (1.1 και νεότερο, δοκιμασμένο σ�
 | Φάκελος | Περιεχόμενο |
 |---|---|
 | `libraries/` | τα αρχεία `.fctl` (βιβλιοθήκες) και `.fctb` (κοπτικά) |
-| `addon/` | το κουμπί εγκατάστασης (`cutterlibs.py`, `InitGui.py`) |
+| `addon/` | η αντιγραφή στο άνοιγμα του FreeCAD (`cutterlibs.py`, `InitGui.py`) |
 | `tools/` | `izar_2026.py`, `izar_extra.py`: φτιάχνουν τα συμπληρώματα IZAR από τους πίνακες των καταλόγων |
 | `tests/` | δοκιμή σε πραγματικό FreeCAD: `FREECAD=/path/to/freecad sh tests/run.sh` |
 | `docs/notes/` | σημειώσεις (μνήμη, εκκρεμότητες) |

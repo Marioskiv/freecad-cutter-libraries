@@ -8,7 +8,7 @@ Read `docs/notes/memory.md`, then `docs/notes/pending.md`.
 ## What lives where (decided by Marios, 2026-10-20)
 | Repository | What it holds |
 |---|---|
-| **this repo** (`freecad-cutter-libraries`) | ONLY the cutter libraries (.fctl/.fctb) and the one-button installer addon |
+| **this repo** (`freecad-cutter-libraries`) | ONLY the cutter libraries (.fctl/.fctb) and the addon that copies them into CAM at FreeCAD start-up |
 | `freecad-wikitips` | WikiTips: hover help + Greek error explanations |
 | `polar-cnc-converter` (to be renamed) | web converter, Polar CNC addon, Knurling & Wrap |
 | `linuxcnc-calibrations`, `cnc-manuals` (private) | machine calibration; machine .ini/.hal and manuals |
